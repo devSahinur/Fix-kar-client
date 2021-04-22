@@ -1,0 +1,10 @@
+.service-card{
+    border:1px solid rgb(225, 219, 219);
+    margin:5px;
+    width:32%;
+    box-shadow: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+.service-card:hover{
+    background-color:rgb(225, 219, 219);
+}

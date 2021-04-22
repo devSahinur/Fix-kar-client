@@ -1,0 +1,50 @@
+.about-container{
+    height:700px;
+    position:relative;
+    background-image: url('../../../images/about-bg.jpg');
+    background-size: cover;
+    color: #fdfffd;
+    /* filter: blur(8px); */
+
+}
+.about-img{
+    float: right;
+    
+}
+
+.about-text h1 ,.about-text h4 , .about-text p{
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.about-text button{
+    border-radius: 4px;
+    background: #256ce1;
+    padding: 10px 22px;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+.about-text button:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+@media (min-width: 1400px) {
+    .about-img{
+        float: right;
+        width: 41%;
+        
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1399px) {
+    .about-img{
+        float: right;
+        width: 55%;
+        
+    }
+}

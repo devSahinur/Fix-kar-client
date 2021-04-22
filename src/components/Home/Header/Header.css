@@ -1,0 +1,31 @@
+.header-container {
+    height:800px;
+    position:relative;
+    background-image: url('../../../images/worksho.jpg');
+    background-size: cover;
+    color: #fdfffd;
+
+}
+.header-container::after {
+    height:700px;
+    
+}
+@media only screen and (max-width: 600px){
+	.header-container {
+        height:400px;
+    }
+    .header-container::after {
+        height:300px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .header-container {
+        height:550px;
+    }
+    .header-container::after {
+        height:400px;
+    }
+
+}
+  

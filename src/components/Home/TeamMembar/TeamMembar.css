@@ -1,0 +1,22 @@
+.team-card{
+    margin:5px;
+    width:32%;
+    box-shadow: 2px solid black;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.geeks {
+    width: 320px;
+    height: 320px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.geeks img {
+    width: 100%;
+    transition: 1s all ease-in-out;
+}
+
+.geeks:hover img {
+    transform: scale(1.2);
+}
