@@ -2,9 +2,22 @@
     border:1px solid rgb(225, 219, 219);
     margin:5px;
     width:32%;
+    background-color:rgb(225, 219, 219);
     box-shadow: 2px solid black;
     transition: all 0.3s ease-in-out;
+    /* cursor: pointer; */
+    padding: 20px;
 }
 .service-card:hover{
+    background-color:#fff;
+    /* cursor: pointer; */
+}
+.order-btn{
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.order-btn:hover{
     background-color:rgb(225, 219, 219);
 }
