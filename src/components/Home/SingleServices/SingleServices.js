@@ -9,7 +9,7 @@ const SingleServices = ({service}) => {
             <h5 className="mt-3 mb-3">{service.name}</h5>
             <h5 className="mt-3 mb-3">${service.price}</h5>
             <p className="text-secondary">{service.description}</p>
-            <Link className='order-btn' to='/login'>Order Now</Link>
+            <Link className='order-btn' to='/order'>Order Now</Link>
         </div>
     );
 };

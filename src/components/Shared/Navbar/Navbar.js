@@ -18,23 +18,23 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu>
-          <NavLink to='/about' activeStyle>
-            About
+          <NavLink to='/home' activeStyle>
+            Home
           </NavLink>
-          <NavLink to='/services' activeStyle>
+          {/* <NavLink to='/services' activeStyle>
             Services
+          </NavLink> */}
+          <NavLink to='/dashboard' activeStyle>
+          Dashboard
           </NavLink>
-          <NavLink to='/contact-us' activeStyle>
-            Contact Us
-          </NavLink>
-          <NavLink to='/sign-up' activeStyle>
-            Sign Up
+          <NavLink to='/admin' activeStyle>
+            Admin
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
         <NavBtn>
-          <NavBtnLink to='/signin'>Sign In</NavBtnLink>
+          <NavBtnLink to='/login'>Log In</NavBtnLink>
         </NavBtn>
       </Nav>
     </>
