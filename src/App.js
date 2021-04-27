@@ -13,6 +13,8 @@ import AddOrders from './components/Dashboard/AddOrders/AddOrders';
 import AddTestimonial from './components/Dashboard/AddTestimonial/AddTestimonial';
 import MakeAdmin from './components/Dashboard/MakeAdmin/MakeAdmin';
 import AllOrdersList from './components/Dashboard/AllOrdersList/AllOrdersList';
+import PrivateRoute from './components/Login/PrivateRoute/PrivateRoute';
+import AddServices from './components/Dashboard/AddServices/AddServices';
 
 export const UserContext = createContext();
 
@@ -31,11 +33,14 @@ function App() {
           <Route path="/dashboard">
             <ResponsiveDashboard></ResponsiveDashboard>
           </Route>
-          <Route path="/order">
+          <Route path="/order/:id">
             <AddOrders></AddOrders>
           </Route>
-          <Route path="/AddReview">
+          <PrivateRoute path="/AddReview">
             <AddTestimonial></AddTestimonial>
+          </PrivateRoute>
+          <Route path="/addServices">
+            <AddServices></AddServices>
           </Route>
           <Route path="/makeAdmin">
             <MakeAdmin></MakeAdmin>

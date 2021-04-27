@@ -34,11 +34,11 @@ const Sidebar = () => {
                         <FontAwesomeIcon icon={faGripHorizontal} /> <span>Dashboard</span>
                     </Link>
                 </li>
-                <li>
+                {/* <li>
                         <Link to="order" className="text-white">
                             <FontAwesomeIcon icon={faCalendar} /> <span>Oder</span>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link to="AddReview" className="text-white">
                             <FontAwesomeIcon icon={faUsers} /> <span>Review Post</span>
@@ -55,8 +55,8 @@ const Sidebar = () => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="text-white" >
-                            <FontAwesomeIcon icon={faCog} /> <span>Settings</span>
+                        <Link to="addServices" className="text-white" >
+                            <FontAwesomeIcon icon={faCog} /> <span>Add Services</span>
                         </Link>
                     </li>
                 
