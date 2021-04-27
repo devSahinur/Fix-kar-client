@@ -1,4 +1,5 @@
 import React from 'react';
+import Services from '../../Home/Services/Services';
 import Sidebar from '../Sidebar/Sidebar';
 
 
@@ -9,8 +10,7 @@ const Dashboard = () => {
                     <Sidebar></Sidebar>
                 </div>
                 <div className="col-md-10 col-sm-12 col-12">
-                    {/* <AppointmentsByDate appointments={appointments}></AppointmentsByDate> */}
-                    <h1>this is Dashboard</h1>
+                    <Services></Services>
                 </div>
         </div>
     );

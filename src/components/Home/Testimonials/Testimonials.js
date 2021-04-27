@@ -1,33 +1,12 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import Testimonial from '../Testimonial/Testimonial';
-// import user1 from '../../../images/team1.jpg'
-// import user2 from '../../../images/team2.jpg'
-// import user3 from '../../../images/team3.jpg'
-
-// const testimonialData = [
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Wilson Harry',
-//         img : user1
-//     },
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Ema Gomez',
-//         img : user2
-//     },
-//     {
-//         quote : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic non architecto nobis, adipisci recusandae repellat accusantium consequuntur, qui nisi deserunt blanditiis mollitia, illo! ',
-//         name : 'Aliza Farari',
-//         img : user3
-//     }
-// ]
 
 const Testimonials = () => {
     const [testimonials, setTestimonials] = useState([])
-    console.log(testimonials)
+    // console.log(testimonials)
     useEffect(() => {
-        fetch('http://localhost:5000/testimonial')
+        fetch('https://peaceful-coast-06734.herokuapp.com/testimonial')
         .then(res => res.json())
         .then(data => setTestimonials(data))
     },[])

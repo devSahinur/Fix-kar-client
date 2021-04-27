@@ -33,9 +33,9 @@ function App() {
           <Route path="/dashboard">
             <ResponsiveDashboard></ResponsiveDashboard>
           </Route>
-          <Route path="/order/:id">
+          <PrivateRoute path="/order/:id">
             <AddOrders></AddOrders>
-          </Route>
+          </PrivateRoute>
           <PrivateRoute path="/AddReview">
             <AddTestimonial></AddTestimonial>
           </PrivateRoute>

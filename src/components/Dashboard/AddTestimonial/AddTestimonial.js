@@ -14,7 +14,7 @@ const AddTestimonial = () => {
         email: loggedInUser.email,
         img: loggedInUser.img
     };
-    const url =`http://localhost:5000/addTestimonial`;
+    const url =`https://peaceful-coast-06734.herokuapp.com/addTestimonial`;
           console.log(eventData);
           fetch(url,{
               method: 'POST',

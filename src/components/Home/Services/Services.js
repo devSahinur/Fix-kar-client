@@ -1,34 +1,11 @@
 import React, { useEffect, useState } from 'react';
-// import sink from '../../../images/basin.png'
-// import ac from '../../../images/air-conditioner.png'
-// import home from '../../../images/engineer.png'
 import SingleServices from '../SingleServices/SingleServices';
 
-// const serviceData = [
-//     {
-//         name: 'Sink Repair',
-//         description: 'Garage Door Repair. Carpentry. Termite Damage Repairs. Tub and shower caulki. Doors. Fences',
-//         price: 150,
-//         img: sink
-//     },
-//     {
-//         name: 'AC Repair',
-//         description: 'Garage Door Repair. Carpentry. Termite Damage Repairs. Tub and shower caulki. Doors. Fences',
-//         price: 250,
-//         img: ac
-//     },
-//     {
-//         name: 'Home Repair',
-//         description: 'Garage Door Repair. Carpentry. Termite Damage Repairs. Tub and shower caulki. Doors. Fences',
-//         price: 300,
-//         img: home
-//     }
-// ]
 const Services = () => {
     const [services, setServices] = useState([])
-    console.log(services)
+    // console.log(services)
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://peaceful-coast-06734.herokuapp.com/services')
         .then(res => res.json())
         .then(data => setServices(data))
     },[])
