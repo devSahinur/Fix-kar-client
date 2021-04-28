@@ -42,7 +42,7 @@ const Login = () => {
       }
 
     return (
-        <div className='container p-5'>
+        <div className='container login p-5'>
             <button className="btn  text-primary" onClick={handleGoogleLogin}>Google Sign in</button>
         </div>
     );
